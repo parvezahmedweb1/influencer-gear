@@ -224,6 +224,25 @@ nav {
 /* ------------------------------------
     ! feature style end
 -------------------------------------*/
+/* ------------------------------------
+    ! footer style start
+-------------------------------------*/
+footer {
+  background-color: #0a0826;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+.media-icon {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.footer p {
+  margin-top: 0.4rem;
+}
+/* ------------------------------------
+    ! footer style end
+-------------------------------------*/
 
 /* ------------------------------------
     ! Media Quary style start
