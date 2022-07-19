@@ -3,6 +3,10 @@
 -------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&display=swap");
 
+:root {
+  /* ! colour */
+  --main-color: #3a3a3a;
+}
 /* ------------------------------------
     ! default style start
 -------------------------------------*/
@@ -11,9 +15,102 @@
   padding: 0;
   box-sizing: border-box;
 }
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
 /* ------------------------------------
     ! default style end
+-------------------------------------*/
+
+/* ------------------------------------
+    ! repate use style start
+-------------------------------------*/
+.container {
+  padding: 0 7rem;
+}
+/* ------------------------------------
+    ! repate use style end
+-------------------------------------*/
+/* ------------------------------------
+    ! header style start
+-------------------------------------*/
+header {
+  padding: 2rem 0;
+  color: var(--main-color);
+  position: fixed;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-text {
+  font-family: "Lobster", cursive;
+  letter-spacing: 2px;
+}
+.fa-bars.menu-icon {
+  display: none;
+}
+nav {
+  display: flex;
+  column-gap: 34px;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  column-gap: 34px;
+}
+.menu-list li {
+  font-weight: 600;
+}
+.menu-list li a {
+  color: #3a3a3a;
+}
+.fa-magnifying-glass,
+.fa-cart-arrow-down {
+  font-size: 22px;
+}
+/* ------------------------------------
+    ! header style end
+-------------------------------------*/
+
+/* ------------------------------------
+    ! Media Quary style start
+-------------------------------------*/
+/* ! laptop */
+@media only screen and (min-width: 991px) and (max-width: 1296px) {
+}
+/* ! tab */
+@media only screen and (min-width: 673px) and (max-width: 990px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+/* ! phone */
+@media only screen and (max-width: 672px) {
+  .container {
+    padding: 0 1rem;
+  }
+  /* ! header responsive */
+  .menu-list {
+    display: none;
+  }
+  .fa-bars.menu-icon {
+    display: block;
+    font-size: 22px;
+  }
+  /* ! header responsive */
+}
+/* ------------------------------------
+    ! Media Quary style end
 -------------------------------------*/
