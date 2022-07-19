@@ -158,6 +158,51 @@ nav {
 -------------------------------------*/
 
 /* ------------------------------------
+    ! products style end
+-------------------------------------*/
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  grid-gap: 30px;
+}
+.product-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+.product {
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  color: var(--main-color);
+}
+.product-details {
+  margin-top: 0.5rem;
+}
+.product-details h3 {
+  margin: 0.2rem 0;
+}
+.rating {
+  display: flex;
+  align-items: center;
+}
+.fa-star,
+.fa-star-half-stroke {
+  color: #fb8200;
+}
+.point {
+  margin-left: 1rem;
+}
+.see-more {
+  text-align: end;
+  display: block;
+}
+/* ------------------------------------
+    ! products style end
+-------------------------------------*/
+
+/* ------------------------------------
     ! Media Quary style start
 -------------------------------------*/
 /* ! laptop */
@@ -187,6 +232,11 @@ nav {
     grid-template-columns: repeat(5, 80px);
   }
   /* our-company responsive end */
+  /* products responsive start */
+  .products {
+    grid-template-columns: repeat(2, 300px);
+  }
+  /* products responsive end */
 }
 
 /* ! phone */
@@ -233,6 +283,11 @@ nav {
     text-align: center;
   }
   /* our-company responsive end */
+  /* products responsive start */
+  .products {
+    grid-template-columns: repeat(1, 300px);
+  }
+  /* products responsive end */
 }
 /* ------------------------------------
     ! Media Quary style end
