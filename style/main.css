@@ -203,11 +203,31 @@ nav {
 -------------------------------------*/
 
 /* ------------------------------------
+    ! feature style start
+-------------------------------------*/
+.features {
+  display: flex;
+  column-gap: 3rem;
+  align-items: center;
+  color: var(--main-color);
+}
+.left-feature,
+.right-feature {
+  width: 50%;
+}
+.right-feature h2 {
+  font-size: 38px;
+}
+.right-feature p {
+  margin: 1.4rem 0;
+}
+/* ------------------------------------
+    ! feature style end
+-------------------------------------*/
+
+/* ------------------------------------
     ! Media Quary style start
 -------------------------------------*/
-/* ! laptop */
-@media only screen and (min-width: 991px) and (max-width: 1296px) {
-}
 
 /* ! tab */
 @media only screen and (min-width: 673px) and (max-width: 990px) {
@@ -237,6 +257,19 @@ nav {
     grid-template-columns: repeat(2, 300px);
   }
   /* products responsive end */
+  /* feature responsive start */
+  .features {
+    flex-direction: column-reverse;
+  }
+  .right-feature {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .left-feature,
+  .right-feature {
+    width: 100%;
+  }
+  /* feature responsive end */
 }
 
 /* ! phone */
@@ -288,6 +321,22 @@ nav {
     grid-template-columns: repeat(1, 300px);
   }
   /* products responsive end */
+  /* feature responsive start */
+  .features {
+    flex-direction: column-reverse;
+  }
+  .right-feature {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .left-feature,
+  .right-feature {
+    width: 100%;
+  }
+  .right-feature h2 {
+    font-size: 30px;
+  }
+  /* feature responsive end */
 }
 /* ------------------------------------
     ! Media Quary style end
