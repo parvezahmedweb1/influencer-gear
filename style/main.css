@@ -46,8 +46,6 @@ body {
 header {
   padding: 2rem 0;
   color: var(--main-color);
-  position: fixed;
-  width: 100%;
 }
 .header {
   display: flex;
