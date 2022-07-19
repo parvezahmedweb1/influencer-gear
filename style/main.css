@@ -37,6 +37,13 @@ body {
 .container {
   padding: 0 7rem;
 }
+.btn {
+  padding: 10px 24px;
+  background: #e02c6d;
+  border-radius: 41px;
+  font-weight: 600;
+  color: white;
+}
 /* ------------------------------------
     ! repate use style end
 -------------------------------------*/
@@ -83,17 +90,70 @@ nav {
 -------------------------------------*/
 
 /* ------------------------------------
+    ! home style start
+-------------------------------------*/
+.home {
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+}
+.left-home,
+.right-home {
+  width: 50%;
+}
+.heading {
+  font-size: 52px;
+  line-height: 70px;
+}
+.sub-heading {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.fa-arrow-right {
+  margin-left: 8px;
+}
+.right-home {
+  text-align: center;
+  background-image: url("/images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.home-img {
+  width: 90%;
+  padding: 1rem;
+}
+/* ------------------------------------
+    ! home style end
+-------------------------------------*/
+
+/* ------------------------------------
     ! Media Quary style start
 -------------------------------------*/
 /* ! laptop */
 @media only screen and (min-width: 991px) and (max-width: 1296px) {
 }
+
 /* ! tab */
 @media only screen and (min-width: 673px) and (max-width: 990px) {
   .container {
     padding: 0 3rem;
   }
+  /* hone responsive start */
+  .home {
+    flex-direction: column-reverse;
+  }
+  .left-home {
+    text-align: center;
+    margin-top: 18px;
+  }
+  .left-home,
+  .right-home {
+    width: 100%;
+  }
+  /* hone responsive end */
 }
+
 /* ! phone */
 @media only screen and (max-width: 672px) {
   .container {
@@ -108,6 +168,23 @@ nav {
     font-size: 22px;
   }
   /* ! header responsive */
+  /* hone responsive start */
+  .home {
+    flex-direction: column-reverse;
+  }
+  .left-home {
+    text-align: center;
+    margin-top: 18px;
+  }
+  .left-home,
+  .right-home {
+    width: 100%;
+  }
+  .heading {
+    font-size: 24px;
+    line-height: 42px;
+  }
+  /* hone responsive end */
 }
 /* ------------------------------------
     ! Media Quary style end
